@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.082 123.19">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: rgba(116,92,242,0.97);
+      }
+
+      .cls-1 {
+        stroke-width: 5px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: rgba(116,92,242,0.97);
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="back-end-development" transform="translate(-1321 -2016.5)">
+    <g id="Rectangle_41" data-name="Rectangle 41" class="cls-1" transform="translate(1321 2016.5)">
+      <rect class="cls-6" width="160.082" height="123.19" rx="8"/>
+      <rect class="cls-4" x="2.5" y="2.5" width="155.082" height="118.19" rx="5.5"/>
+    </g>
+    <path id="Path_12" data-name="Path 12" class="cls-1" d="M0,0H156.475" transform="translate(1321.329 2033.957)"/>
+    <g id="Ellipse_16" data-name="Ellipse 16" class="cls-2" transform="translate(1447.484 2023.746)">
+      <circle class="cls-6" cx="1.976" cy="1.976" r="1.976"/>
+      <circle class="cls-4" cx="1.976" cy="1.976" r="1.476"/>
+    </g>
+    <g id="Ellipse_16-2" data-name="Ellipse 16" class="cls-2" transform="translate(1455.389 2023.746)">
+      <circle class="cls-6" cx="1.976" cy="1.976" r="1.976"/>
+      <circle class="cls-4" cx="1.976" cy="1.976" r="1.476"/>
+    </g>
+    <g id="Ellipse_16-3" data-name="Ellipse 16" class="cls-2" transform="translate(1463.295 2023.746)">
+      <circle class="cls-6" cx="1.976" cy="1.976" r="1.976"/>
+      <circle class="cls-4" cx="1.976" cy="1.976" r="1.476"/>
+    </g>
+    <circle id="Ellipse_17" data-name="Ellipse 17" class="cls-3" cx="37.36" cy="37.36" r="37.36" transform="translate(1363.82 2048.121)"/>
+    <path id="Path_15" data-name="Path 15" class="cls-4" d="M0,0H43.18V43.18H0Z" transform="translate(1379.82 2064.32)"/>
+    <path id="Path_16" data-name="Path 16" class="cls-5" d="M31.86,20.956a14.092,14.092,0,0,0,.108-1.684,10.649,10.649,0,0,0-.13-1.684l3.649-2.85a.892.892,0,0,0,.216-1.1l-3.454-5.98a.878.878,0,0,0-1.058-.389L26.894,9A12.649,12.649,0,0,0,23.98,7.311l-.648-4.577A.862.862,0,0,0,22.469,2H15.56a.84.84,0,0,0-.842.734L14.07,7.311A12.987,12.987,0,0,0,11.155,9l-4.3-1.727A.854.854,0,0,0,5.8,7.657l-3.454,5.98a.837.837,0,0,0,.216,1.1l3.649,2.85a10.175,10.175,0,0,0-.022,3.368l-3.649,2.85a.892.892,0,0,0-.216,1.1l3.454,5.98a.878.878,0,0,0,1.058.389l4.3-1.727a12.649,12.649,0,0,0,2.915,1.684L14.7,35.81a.878.878,0,0,0,.864.734h6.909a.825.825,0,0,0,.842-.734l.648-4.577a12.987,12.987,0,0,0,2.915-1.684l4.3,1.727a.854.854,0,0,0,1.058-.389l3.454-5.98a.837.837,0,0,0-.216-1.1ZM19.014,25.749a6.477,6.477,0,1,1,6.477-6.477A6.5,6.5,0,0,1,19.014,25.749Z" transform="translate(1382.396 2066.638)"/>
+  </g>
+</svg>

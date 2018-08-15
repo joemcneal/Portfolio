@@ -1,0 +1,181 @@
+body, html {
+  font-family: 'Montserrat';
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  text-align: center;
+}
+
+.intro {
+  padding: 20px 20px 0px 20px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+.nav-button {
+  height: 60px;
+  width: 60px;
+  float: right;
+  margin-top: -10px;
+}
+
+.experience-instance {
+  height: 50%;
+  width: 50%;
+}
+
+.main-head {
+  padding-top: 7em;
+  margin-bottom: 0px;
+}
+
+.main-head .headline {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.main-head .subheadline {
+  font-size: 16px;
+}
+
+.avatar {
+  display: block;
+  height: 50%;
+  width: 50%;
+  margin: 0px auto 30px auto;
+}
+
+.learn-more {
+  background-color: #00A2FF;
+  color: #ffffff;
+  padding: auto 0px auto 0px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 16px;
+}
+
+.desktop-drawing {
+  margin-top: 5em;
+  margin-bottom: 0;
+}
+
+#welcome-div {
+  padding: 0px;
+}
+
+.welcome {
+  color: #fff;
+  background-color: rgba(116, 92, 242, 0.97);
+  padding: 50px 20px 25em 20px;
+}
+
+.welcome h3 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 0px;
+}
+
+.welcome p {
+  font-size: 16px;
+  line-height: 33px;
+}
+
+.technical-skills {
+  background: #fff;
+  position: relative;
+  top: -270px;
+  width: 90%;
+  left: 5%;
+  padding-top: 30px;
+  border-radius: 20px;
+}
+
+.technical-skills .skill-image {
+  height: 40%;
+  width: 40%;
+}
+
+.technical-skills h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.technical-skills hr {
+  border-bottom: 3px solid rgba(126, 126, 126, 0.28);
+  width: 80%;
+  margin-top: 0px;
+}
+
+.technical-skills h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.technical-skills .progress {
+  background-color: rgba(172, 172, 172, 0.24);
+  border-radius: 0px 5px 5px 0px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) inset;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) inset;
+  height: 40px;
+  overflow: hidden;
+  margin: 10px 7px 0px 0px;
+}
+
+.technical-skills .bar {
+  background-color: rgba(116, 92, 242, 0.97);
+  -webkit-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15) inset;
+          box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15) inset;
+  color: #fff;
+  float: left;
+  height: 100%;
+  position: relative;
+  text-align: left;
+}
+
+.technical-skills .skill {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 27% auto;
+      grid-template-columns: 27% auto;
+  vertical-align: middle;
+}
+
+.technical-skills .skill-area {
+  margin-top: 6em;
+}
+
+.technical-skills .skill-name {
+  word-wrap: normal;
+  font-size: 14px;
+  background: #00A2FF;
+  color: #fff;
+  margin: 10px 0px 10px 7px;
+  height: 40px;
+  font-weight: bold;
+  line-height: 12px;
+  border-radius: 5px 0px 0px 5px;
+  padding-top: 12px;
+}
+
+.technical-skills .skill-percent {
+  float: right;
+  padding-right: 3px;
+  font-weight: bold;
+  padding-top: 11px;
+  font-size: 11px;
+}
+/*# sourceMappingURL=main.css.map */
