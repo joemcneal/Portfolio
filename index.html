@@ -8,23 +8,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    </style>
 
 </head>
 
 <body>
     <!-- Landing page -->
     <div class='intro'>
-        <img class='logo' src='images/logo.svg'>
-        <img src="images/side-bar-menu.svg" alt="" class="nav-button">
+        <a href="#">
+            <img class='logo' src='images/logo.svg'>
+        </a>
+        <a href='#'>
+            <img src="images/side-bar-menu.svg" alt="" class="nav-button">
+        </a>
 
         <div class='main-head'>
             <h1 class='headline'>Full Stack Developer, Designer & Instructor</h1>
@@ -74,40 +74,53 @@
         <div class='experience-instance' ng-repeat='experience in experiences'>
             <!-- <img ng-src="images/{{experience.id}}-background.png" alt="" class="experience-background">  -->
             <img src="images/{{experience.id}}-logo.svg" alt="" class="experience-logo">
+            <!-- <p>
+                <b>Company:</b> {{experience.name}}
+            </p>
             <p>
-                <b>Company:</b> {{experience.name}}</p>
+                <b>Role:</b> {{experience.role}}
+            </p>
             <p>
-                <b>Role:</b> {{experience.role}}</p>
-            <p>
-                <b>Description:</b> {{experience.description}}</p>
+                <b>Description:</b> {{experience.description}}
+            </p> -->
+            <p id='name'>{{experience.name}}</p>
+            <p id='role'>{{experience.role}}</p>
+            <p id='description'>{{experience.description}}</p>
             <button class="see-more-details btn">See More Details</button>
         </div>
     </div>
-    <div class="contact-form">
-        <h1 class='cta-headline'>Interested in working together?</h1>
-        <h4>I am available for freelance development work. Enter your email and details of your inquiry below.</h4>
-        <input type="text" class="user-info" placeholder='Name'>
-        <input type="text" class="user-info" placeholder='Email Address'>
-        <textarea type="text" rows='5' placeholder='Enter your message here...'></textarea>
-        <button class="submit btn">Submit</button>
-    </div>
-    <footer>
-        <div class='social-icons'>
-            <a href="#">
-                <img src="images/facebook.svg" alt="" class="social-icon">
-            </a>
-            <a href="#">
-                <img src="images/youtube.svg" alt="" class="social-icon">
-            </a>
-            <a href="#">
-                <img src="images/instagram.svg" alt="" class="social-icon">
-            </a>
-            <a href="#">
-                <img src="images/linkedin.svg" alt="" class="social-icon">
-            </a>
+    <div class="post-experience">
+        <div class="contact-form">
+            <h1 class='cta-headline'>Interested in working together?</h1>
+            <h4>I am available for freelance development work. Enter your email and details of your inquiry below.</h4>
+            <input type="text" class="user-info" placeholder='Name'>
+            <input type="text" class="user-info" placeholder='Email Address'>
+            <textarea type="text" rows='5' placeholder='Enter your message here...'></textarea>
+            <button class="submit btn">Submit</button>
         </div>
-        <h5>JOE MCNEAL &copy;2018</h5>
-    </footer>
+        <footer>
+            <div class='social-icons'>
+                <a href="#">
+                    <img src="images/facebook.svg" alt="" class="social-icon">
+                </a>
+                <a href="#">
+                    <img src="images/youtube.svg" alt="" class="social-icon">
+                </a>
+                <a href="#">
+                    <img src="images/instagram.svg" alt="" class="social-icon">
+                </a>
+                <a href="#">
+                    <img src="images/linkedin.svg" alt="" class="social-icon">
+                </a>
+            </div>
+            <h5>JOE MCNEAL &copy;2018</h5>
+        </footer>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/angular.min.js"></script>
     <script src='js/app.js'></script>
 </body>
