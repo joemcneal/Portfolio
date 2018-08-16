@@ -17,64 +17,73 @@
 </head>
 
 <body>
-    <!-- Landing page -->
-    <div class='intro'>
-        <a href="#">
-            <img class='logo' src='images/logo.svg'>
-        </a>
-        <a href='#'>
-            <img src="images/side-bar-menu.svg" alt="" class="nav-button">
-        </a>
+    <!-- Side bar menu -->
+    <!-- <div class="sidebar">
+        <ul>
+            <li>About</li>
+            <li>Courses</li>
+            <li>Contact</li>
+        </ul>
+    </div> -->
+    <div class="main">
+        <!-- Landing page -->
+        <div class='intro' data-ng-controller='menu_toggle'>
+            <a href="#">
+                <img class='logo' src='images/logo.svg'>
+            </a>
+            <a href='#' ng-click="toggleSidebar()">
+                <img src="images/side-bar-menu.svg" alt="" class="nav-button">
+            </a>
 
-        <div class='main-head'>
-            <h1 class='headline'>Full Stack Developer, Designer & Instructor</h1>
-            <h4 class='subheadline'>I have a passion for coding and helping others realize their full potential.</h4>
-            <img src="images/avatar.svg" alt="" class="avatar">
-            <button class='learn-more'>Learn More</button>
-            <img src="images/desktop.svg" alt="" class="desktop-drawing">
+            <div class='main-head'>
+                <h1 class='headline'>Full Stack Developer, Designer & Instructor</h1>
+                <h4 class='subheadline'>I have a passion for coding and helping others realize their full potential.</h4>
+                <img src="images/avatar.svg" alt="" class="avatar">
+                <button class='learn-more'>Learn More</button>
+                <img src="images/desktop.svg" alt="" class="desktop-drawing">
+            </div>
         </div>
-    </div>
-    <div class="welcome">
-        <h3>Hi, I'm Joe. Thanks for visiting!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, alias id dicta, nulla iste optio et pariatur odit voluptatibus
-            aliquam laudantium voluptates magni vitae aspernatur magnam? Amet, quae molestiae. Sint harum fugiat reiciendis
-            non, eius voluptate! Omnis incidunt hic dolorum repellendus. A rerum aperiam aliquid laborum quos blanditiis
-            atque voluptate!</p>
-    </div>
+        <div class="welcome">
+            <h3>Hi, I'm Joe. Thanks for visiting!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, alias id dicta, nulla iste optio et pariatur odit
+                voluptatibus aliquam laudantium voluptates magni vitae aspernatur magnam? Amet, quae molestiae. Sint harum
+                fugiat reiciendis non, eius voluptate! Omnis incidunt hic dolorum repellendus. A rerum aperiam aliquid laborum
+                quos blanditiis atque voluptate!</p>
+        </div>
 
-    <div class="technical-skills" data-ng-controller='SkillsController'>
-        <h1>Technical Skills</h1>
-        <hr class='ts-divider'>
-        <div class='skill-area' ng-repeat='skillType in skillTypes'>
-            <img ng-src="images/{{skillType.id}}.svg" alt="" class="skill-image">
-            <h3>{{ skillType.name }}</h3>
-            <div ng-repeat="skill in skills | filter: id=skillType.id">
-                <div class='skill-list'>
-                    <div class="skill">
-                        <div class=skill-name valign='center'> {{ skill.name }}</div>
-                        <div class="progress">
-                            <div class="bar" ng-style="{width:({{ skill.percent }} - 10) + '%'}"></div>
-                            <span class="skill-percent">{{ skill.percent }}%</span>
+        <div class="technical-skills" data-ng-controller='SkillsController'>
+            <h1>Technical Skills</h1>
+            <hr class='ts-divider'>
+            <div class='skill-area' ng-repeat='skillType in skillTypes'>
+                <img ng-src="images/{{skillType.id}}.svg" alt="" class="skill-image">
+                <h3>{{ skillType.name }}</h3>
+                <div ng-repeat="skill in skills | filter: id=skillType.id">
+                    <div class='skill-list'>
+                        <div class="skill">
+                            <div class=skill-name valign='center'> {{ skill.name }}</div>
+                            <div class="progress">
+                                <div class="bar" ng-style="{width:({{ skill.percent }} - 10) + '%'}"></div>
+                                <span class="skill-percent">{{ skill.percent }}%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="experience-intro">
-        <h3>Hi, I'm Joe. Thanks for visiting!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, alias id dicta, nulla iste optio et pariatur odit voluptatibus
-            aliquam laudantium voluptates magni vitae aspernatur magnam? Amet, quae molestiae. Sint harum fugiat reiciendis
-            non, eius voluptate! Omnis incidunt hic dolorum repellendus. A rerum aperiam aliquid laborum quos blanditiis
-            atque voluptate!</p>
-    </div>
-    <div class="professional-experience" data-ng-controller='ExperienceController'>
-        <h1>Work Experience</h1>
-        <hr class='ts-divider'>
-        <div class='experience-instance' ng-repeat='experience in experiences'>
-            <!-- <img ng-src="images/{{experience.id}}-background.png" alt="" class="experience-background">  -->
-            <img src="images/{{experience.id}}-logo.svg" alt="" class="experience-logo">
-            <!-- <p>
+        <div class="experience-intro">
+            <h3>Hi, I'm Joe. Thanks for visiting!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, alias id dicta, nulla iste optio et pariatur odit
+                voluptatibus aliquam laudantium voluptates magni vitae aspernatur magnam? Amet, quae molestiae. Sint harum
+                fugiat reiciendis non, eius voluptate! Omnis incidunt hic dolorum repellendus. A rerum aperiam aliquid laborum
+                quos blanditiis atque voluptate!</p>
+        </div>
+        <div class="professional-experience" data-ng-controller='ExperienceController'>
+            <h1>Work Experience</h1>
+            <hr class='ts-divider'>
+            <div class='experience-instance' ng-repeat='experience in experiences'>
+                <!-- <img ng-src="images/{{experience.id}}-background.png" alt="" class="experience-background">  -->
+                <img src="images/{{experience.id}}-logo.svg" alt="" class="experience-logo">
+                <!-- <p>
                 <b>Company:</b> {{experience.name}}
             </p>
             <p>
@@ -83,38 +92,39 @@
             <p>
                 <b>Description:</b> {{experience.description}}
             </p> -->
-            <p id='name'>{{experience.name}}</p>
-            <p id='role'>{{experience.role}}</p>
-            <p id='description'>{{experience.description}}</p>
-            <button class="see-more-details btn">See More Details</button>
-        </div>
-    </div>
-    <div class="post-experience">
-        <div class="contact-form">
-            <h1 class='cta-headline'>Interested in working together?</h1>
-            <h4>I am available for freelance development work. Enter your email and details of your inquiry below.</h4>
-            <input type="text" class="user-info" placeholder='Name'>
-            <input type="text" class="user-info" placeholder='Email Address'>
-            <textarea type="text" rows='5' placeholder='Enter your message here...'></textarea>
-            <button class="submit btn">Submit</button>
-        </div>
-        <footer>
-            <div class='social-icons'>
-                <a href="#">
-                    <img src="images/facebook.svg" alt="" class="social-icon">
-                </a>
-                <a href="#">
-                    <img src="images/youtube.svg" alt="" class="social-icon">
-                </a>
-                <a href="#">
-                    <img src="images/instagram.svg" alt="" class="social-icon">
-                </a>
-                <a href="#">
-                    <img src="images/linkedin.svg" alt="" class="social-icon">
-                </a>
+                <p id='name'>{{experience.name}}</p>
+                <p id='role'>{{experience.role}}</p>
+                <p id='description'>{{experience.description}}</p>
+                <button class="see-more-details btn">See More Details</button>
             </div>
-            <h5>JOE MCNEAL &copy;2018</h5>
-        </footer>
+        </div>
+        <div class="post-experience">
+            <div class="contact-form">
+                <h1 class='cta-headline'>Interested in working together?</h1>
+                <h4>I am available for freelance development work. Enter your email and details of your inquiry below.</h4>
+                <input type="text" class="user-info" placeholder='Name' maxlength="50">
+                <input type="text" class="user-info" placeholder='Email Address' maxlength="50">
+                <textarea type="text" rows='5' placeholder='Enter your message here...' maxlength="2000"></textarea>
+                <button class="submit btn">Submit</button>
+            </div>
+            <footer>
+                <div class='social-icons'>
+                    <a href="#">
+                        <img src="images/facebook.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="images/youtube.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="images/instagram.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="images/linkedin.svg" alt="" class="social-icon">
+                    </a>
+                </div>
+                <h5>JOE MCNEAL &copy;2018</h5>
+            </footer>
+        </div>
     </div>
 
     <!-- jQuery library -->

@@ -9,6 +9,10 @@ body {
   text-align: center;
 }
 
+.sidebar {
+  background: #e2e2e2;
+}
+
 .intro {
   padding: 20px 20px 0px 20px;
 }
@@ -24,6 +28,13 @@ body {
   width: 60px;
   float: right;
   margin-top: -10px;
+  background: none;
+  border: none;
+  color: rgba(116, 92, 242, 0.97);
+}
+
+.nav-button:focus {
+  outline: none;
 }
 
 .main-head {
@@ -256,6 +267,11 @@ body {
   font-style: italic;
 }
 
+.professional-experience #description {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
 .professional-experience .see-more-details {
   margin-top: 10px;
   font-weight: bold;
@@ -265,12 +281,12 @@ body {
 
 .contact-form {
   background: rgba(126, 126, 126, 0.28);
-  padding: 30px 20px;
+  padding: 80px 20px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  padding-bottom: 5em;
+  padding-bottom: 6em;
   margin-top: 0px;
 }
 
@@ -291,6 +307,12 @@ body {
   border: rgba(126, 126, 126, 0.28);
   padding: 10px 10px;
   border-radius: 5px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  -webkit-box-shadow: 0 0 5px #00A2FF;
+          box-shadow: 0 0 5px #00A2FF;
+  outline: 2px #00A2FF;
 }
 
 .contact-form textarea {
