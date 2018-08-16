@@ -61,43 +61,53 @@
             </div>
         </div>
     </div>
-    <div class="professional-experience">
-        <h1>Professional Experience</h1>
-        <span class="pe-divider"></span>
-        <div>
-            <span class='ei-overlay'>
-                <img src="images/accenture-background.png" alt="" class="experience-instance">
-                <img src="images/accenture-logo.svg" alt="" class="experience-logo">
-            </span>
+    <div class="experience-intro">
+        <h3>Hi, I'm Joe. Thanks for visiting!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, alias id dicta, nulla iste optio et pariatur odit voluptatibus
+            aliquam laudantium voluptates magni vitae aspernatur magnam? Amet, quae molestiae. Sint harum fugiat reiciendis
+            non, eius voluptate! Omnis incidunt hic dolorum repellendus. A rerum aperiam aliquid laborum quos blanditiis
+            atque voluptate!</p>
+    </div>
+    <div class="professional-experience" data-ng-controller='ExperienceController'>
+        <h1>Work Experience</h1>
+        <hr class='ts-divider'>
+        <div class='experience-instance' ng-repeat='experience in experiences'>
+            <!-- <img ng-src="images/{{experience.id}}-background.png" alt="" class="experience-background">  -->
+            <img src="images/{{experience.id}}-logo.svg" alt="" class="experience-logo">
+            <p>
+                <b>Company:</b> {{experience.name}}</p>
+            <p>
+                <b>Role:</b> {{experience.role}}</p>
+            <p>
+                <b>Description:</b> {{experience.description}}</p>
+            <button class="see-more-details btn">See More Details</button>
         </div>
     </div>
     <div class="contact-form">
-        <h1>Interested in working together?</h1>
-        <h4>I am available for freeland development work. Enter your email and details of your inquiry below.</h4>
+        <h1 class='cta-headline'>Interested in working together?</h1>
+        <h4>I am available for freelance development work. Enter your email and details of your inquiry below.</h4>
         <input type="text" class="user-info" placeholder='Name'>
         <input type="text" class="user-info" placeholder='Email Address'>
-        <input type="text" class="user-message" placeholder='Enter your message here...'>
-        <button class="submit">
-            <i class='material-icons'>mail_outline</i> Submit</button>
+        <textarea type="text" rows='5' placeholder='Enter your message here...'></textarea>
+        <button class="submit btn">Submit</button>
     </div>
     <footer>
-        <a href="#">
-            <img src="images/facebook.svg" alt="" class="social-icon">
-        </a>
-        <a href="#">
-            <img src="images/youtube.svg" alt="" class="social-icon">
-        </a>
-        <a href="#">
-            <img src="images/instagram.svg" alt="" class="social-icon">
-        </a>
-        <a href="#">
-            <img src="images/linkedin.svg" alt="" class="social-icon">
-        </a>
+        <div class='social-icons'>
+            <a href="#">
+                <img src="images/facebook.svg" alt="" class="social-icon">
+            </a>
+            <a href="#">
+                <img src="images/youtube.svg" alt="" class="social-icon">
+            </a>
+            <a href="#">
+                <img src="images/instagram.svg" alt="" class="social-icon">
+            </a>
+            <a href="#">
+                <img src="images/linkedin.svg" alt="" class="social-icon">
+            </a>
+        </div>
         <h5>JOE MCNEAL &copy;2018</h5>
     </footer>
-
-
-
     <script src="js/angular.min.js"></script>
     <script src='js/app.js'></script>
 </body>

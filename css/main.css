@@ -25,11 +25,6 @@ body {
   margin-top: -10px;
 }
 
-.experience-instance {
-  height: 50%;
-  width: 50%;
-}
-
 .main-head {
   padding-top: 7em;
   margin-bottom: 0px;
@@ -95,13 +90,15 @@ body {
 }
 
 .technical-skills {
-  background: #fff;
+  background-color: white;
   position: relative;
   top: -270px;
   width: 90%;
   left: 5%;
   padding-top: 30px;
   border-radius: 20px;
+  margin-bottom: -400px;
+  padding-bottom: 6em;
 }
 
 .technical-skills .skill-image {
@@ -112,10 +109,11 @@ body {
 .technical-skills h1 {
   font-size: 28px;
   font-weight: bold;
+  color: rgba(116, 92, 242, 0.97);
 }
 
 .technical-skills hr {
-  border-bottom: 3px solid rgba(126, 126, 126, 0.28);
+  border-bottom: 2px solid rgba(126, 126, 126, 0.28);
   width: 80%;
   margin-top: 0px;
 }
@@ -177,5 +175,150 @@ body {
   font-weight: bold;
   padding-top: 11px;
   font-size: 11px;
+}
+
+.experience-intro {
+  color: #fff;
+  background-color: rgba(116, 92, 242, 0.97);
+  padding: 20em 20px 25em 20px;
+}
+
+.experience-intro h3 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 0px;
+}
+
+.experience-intro p {
+  font-size: 16px;
+  line-height: 33px;
+}
+
+.professional-experience {
+  background-color: white;
+  position: relative;
+  top: -270px;
+  width: 90%;
+  left: 5%;
+  padding-top: 30px;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+
+.professional-experience h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgba(116, 92, 242, 0.97);
+}
+
+.professional-experience hr {
+  border-bottom: 2px solid rgba(126, 126, 126, 0.28);
+  width: 80%;
+  margin-top: 0px;
+}
+
+.professional-experience .experience-instance {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding: 20px 0px 20px 0px;
+}
+
+.professional-experience .experience-logo {
+  max-height: 50%;
+  max-width: 50%;
+  margin-bottom: 3em;
+}
+
+.professional-experience .experience-background {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.professional-experience p {
+  font-size: 18px;
+  text-align: left;
+  margin: 0% 3%;
+  margin-bottom: 10px;
+  color: #5e5e5e;
+}
+
+.professional-experience .see-more-details {
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: rgba(116, 92, 242, 0.97);
+  color: #fff;
+}
+
+.contact-form {
+  background: rgba(126, 126, 126, 0.28);
+  padding: 30px 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  padding-bottom: 5em;
+  margin-top: 0px;
+}
+
+.contact-form h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color: rgba(116, 92, 242, 0.97);
+  margin-bottom: 20px;
+}
+
+.contact-form h4 {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact-form input {
+  margin-top: 15px;
+  border: rgba(126, 126, 126, 0.28);
+  padding: 10px 10px;
+}
+
+.contact-form button {
+  margin-top: 50px;
+  color: white;
+  background: #02B501;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 15px 0;
+}
+
+.contact-form textarea {
+  margin-top: 15px;
+  border: rgba(126, 126, 126, 0.28);
+  padding: 10px 10px;
+}
+
+footer {
+  background: rgba(116, 92, 242, 0.97);
+  padding-top: 8em;
+}
+
+footer .social-icons {
+  width: 250px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  grid-column-gap: 5px;
+  margin-bottom: 8em;
+}
+
+footer .social-icons .social-icon {
+  height: 90%;
+  width: 90%;
+  -webkit-box-align: middle;
+      -ms-flex-align: middle;
+          align-items: middle;
+}
+
+footer h5 {
+  color: white;
+  padding-bottom: 1em;
 }
 /*# sourceMappingURL=main.css.map */

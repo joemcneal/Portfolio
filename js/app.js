@@ -34,6 +34,26 @@ portfolioApp.controller('SkillsController', function($scope) {
         { name : 'Project Planning', type : 'project-management', percent : 80},
         {name : 'Resource Mgmt', type : 'project-management', percent : 65}
     ];
+
+   
     
 
+});
+
+
+portfolioApp.controller('ExperienceController', function($scope) {
+    $scope.experiences = [
+        {
+            id: 'accenture', 
+            name: 'Accenture Federal Services', 
+            role: "Senior Technology Analyst",
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia corrupti quo, voluptates sed odit consequuntur totam sunt magni! Provident quaerat eum omnis! Aliquam saepe pariatur nam voluptates. Distinctio inventore praesentium officia neque a obcaecati sint iusto blanditiis sequi minima, amet sunt libero ex porro excepturi odio minus saepe dolore?'
+        },
+        {
+            id: 'synovus', 
+            name: 'Synovus Financial', 
+            role: "Business Analyst",
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia corrupti quo, voluptates sed odit consequuntur totam sunt magni! Provident quaerat eum omnis! Aliquam saepe pariatur nam voluptates. Distinctio inventore praesentium officia neque a obcaecati sint iusto blanditiis sequi minima, amet sunt libero ex porro excepturi odio minus saepe dolore?'
+        }
+    ];
 });

@@ -2,7 +2,8 @@ $colors: (
     light-blue: #00A2FF,
     light-purple: rgba(116, 92, 242,.97),
     light-grey: rgba(126,126,126,.28),
-    money-green: #02B501
+    money-green: #02B501,
+    back-light-grey: rgb(255, 255, 255)
 );
 
 @function color($color-name) {
@@ -36,10 +37,6 @@ body {
     float: right;
     margin-top: -10px;
     
- }
- .experience-instance {
-    height: 50%;
-    width: 50%;
  }
 
  .main-head {
@@ -108,13 +105,15 @@ body {
 }
 
 .technical-skills {
-    background: #fff;
+    background-color: color('back-light-grey');
     position: relative;
     top: -270px;
     width: 90%;
     left: 5%;
     padding-top: 30px;
     border-radius: 20px;
+    margin-bottom: -400px;
+    padding-bottom: 6em;
 
 
 
@@ -126,10 +125,11 @@ body {
     h1 {
         font-size: 28px;
         font-weight: bold;
+        color: color(light-purple);
     }
     
     hr {
-        border-bottom: 3px solid color(light-grey);
+        border-bottom: 2px solid color(light-grey);
         width: 80%;
         margin-top: 0px;
     }
@@ -189,6 +189,156 @@ body {
         padding-top: 11px;
         font-size: 11px;
     }
+    
+}
+
+.experience-intro {
+    color: #fff;
+    background-color: color(light-purple);
+    padding: 20em 20px 25em 20px;
+    
+
+    
+
+  
+    h3 {
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: 0px;     
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 33px;
+    }
+}
+
+
+.professional-experience {
+    
+    //background-image: linear-gradient(to bottom, #8c8c8c, #a8a8a8, #c4c4c4, #e1e1e1, #ffffff);
+    background-color: color('back-light-grey');
+    position: relative;
+    top: -270px;
+    width: 90%;
+    left: 5%;
+    padding-top: 30px;
+    border-radius: 20px;
+    margin-bottom: 0;
+
+    h1 {
+        font-size: 28px;
+        font-weight: bold;
+        color: color(light-purple);
+    }
+    
+    hr {
+        border-bottom: 2px solid color(light-grey);
+        width: 80%;
+        margin-top: 0px;
+    }
+
+    .experience-instance {
+        margin-top: 5em;
+        margin-bottom: 5em;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .experience-logo {
+        max-height: 50%;
+        max-width: 50%;
+        margin-bottom: 3em;
+
+    }
+
+    .experience-background {
+        max-height: 100%;
+        max-width: 100%;
+     }
+     
+     p {
+         font-size: 18px;
+         text-align: left;
+         margin: 0% 3%;
+         margin-bottom: 10px;
+         color: #5e5e5e
+     }
+
+     .see-more-details {
+         margin-top: 10px;
+         font-weight: bold;
+         background-color: color(light-purple);
+         color: #fff;
+     }
+}
+
+.contact-form {
+    background: color(light-grey);
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: auto;
+    padding-bottom: 5em;
+    margin-top: 0px;
+    h1 {
+        font-size: 38px;
+        font-weight: bold;
+        color: color(light-purple);
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    input {
+        margin-top: 15px;
+        border: color(light-grey);
+        padding: 10px 10px;
+    }
+
+    button {
+        margin-top: 50px;
+        color: white;
+        background: color(money-green);
+        font-size: 24px;
+        font-weight: 600;
+        padding: 15px 0;
+
+    }
+    
+    textarea {
+        margin-top: 15px;
+        border: color(light-grey);
+        padding: 10px 10px;
+    }
+}
+
+footer {
+    background: color(light-purple);
+    padding-top: 8em;
+    
+    .social-icons {
+        width: 250px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        grid-column-gap: 5px;
+        margin-bottom: 8em;
+
+        .social-icon {
+            height: 90%;
+            width: 90%;
+            align-items: middle;
+        }
+    }
+
+    h5 {
+        color: white;
+        padding-bottom: 1em;
+    }
+
+
     
 }
 
