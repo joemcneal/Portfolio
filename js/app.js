@@ -67,10 +67,30 @@ portfolioApp.controller('ExperienceController', function ($scope) {
 });
 
 
-portfolioApp.controller('menu_toggle', function($scope) {
-    $scope.toggleSidebar = function () {
-        
-    }
+portfolioApp.controller('menu_toggle', function ($scope) {
+
 
 
 });
+
+
+var header = document.getElementById('top-nav');
+
+var sticky = header.offsetTop;
+
+window.onscroll = function () {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+
+}
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}

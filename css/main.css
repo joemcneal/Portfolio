@@ -1,45 +1,94 @@
 body, html {
-  font-family: 'Montserrat', sans-serif;
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   text-align: center;
 }
 
-.sidebar {
-  background: #e2e2e2;
+.nav-wrapper .top-nav {
+  padding: 10px 20px;
+  background: #fff;
 }
 
-.intro {
-  padding: 20px 20px 0px 20px;
+.nav-wrapper .top-nav .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.logo {
+.nav-wrapper .top-nav .nav-button {
   height: 50px;
   width: 50px;
-  float: left;
-}
-
-.nav-button {
-  height: 60px;
-  width: 60px;
   float: right;
-  margin-top: -10px;
   background: none;
   border: none;
   color: rgba(116, 92, 242, 0.97);
 }
 
-.nav-button:focus {
+.nav-wrapper .top-nav .nav-button:focus {
   outline: none;
 }
 
-.main-head {
+.nav-wrapper .top-nav .logo {
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+.nav-wrapper .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 5px;
+  text-align: left;
+  -webkit-box-shadow: -5px 0px 10px rgba(126, 126, 126, 0.28);
+          box-shadow: -5px 0px 10px rgba(126, 126, 126, 0.28);
+}
+
+.nav-wrapper .sidenav a {
+  padding: 8px 20px 8px 8px;
+  text-decoration: none;
+  color: rgba(116, 92, 242, 0.97);
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-wrapper .sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.nav-wrapper .sidenav .closebtn {
+  position: relative;
+  top: 0;
+  font-size: 36px;
+  margin-left: 50px;
+  color: black;
+  text-align: right;
+}
+
+.nav-wrapper .sidenav-link {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.main {
   padding-top: 7em;
-  margin-bottom: 0px;
+}
+
+.main-head {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-head .headline {
@@ -171,7 +220,7 @@ body {
 
 .technical-skills .skill-name {
   word-wrap: normal;
-  font-size: 14px;
+  font-size: 12px;
   background: #00A2FF;
   color: #fff;
   margin: 10px 0px 10px 7px;

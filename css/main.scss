@@ -6,56 +6,117 @@ $colors: (
     back-light-grey: rgb(255, 255, 255)
 );
 
+$font-family: 'Montserrat', sans-serif;
+
 @function color($color-name) {
     @return map-get($colors, $color-name);
 }
 
+
+
+
 body, html {
-  
-    font-family: 'Montserrat', sans-serif;
     height: 100%;
     width: 100%;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    font-family: $font-family!important;
+    text-align: center; 
+}
+
+
+.nav-wrapper {
+    .top-nav {
+        padding: 10px 20px;
+        background: #fff;
+       
+
+        .sticky {
+            position: fixed;
+            top:0;
+            width: 100%;
+            
+        }
+
+        .nav-button {
+            height: 50px;
+            width: 50px;
+            float: right;
+            background: none;
+            border: none;
+            color: color(light-purple);
+        }
+        
+        .nav-button:focus {
+            outline: none;
+        }
+
+        .logo {
+            height: 50px;
+            width: 50px;
+            float: left;
+
+         }
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 10000;
+        top: 0;
+        right: 0;
+        background-color: rgb(255, 255, 255);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 5px;
+        text-align: left;
+        box-shadow: -5px 0px 10px color(light-grey);
+    }
+    
+    .sidenav a {
+        padding: 8px 20px 8px 8px;
+        text-decoration: none;
+        color: color(light-purple);
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+        position: relative;
+        top: 0;
+        font-size: 36px;
+        margin-left: 50px;
+        color: black;
+        text-align: right;
+    }
+
+    .sidenav-link {
+        margin-left: 20px;
+        font-size: 16px;
+    }  
+}
+
+
+
+
+
+
+
+.main {
+    padding-top: 7em;
     // display: grid;
-    // grid-template-columns: 60% auto;
+    // grid-template-columns: 50% auto;
 }
-
-.sidebar {
-    background: rgb(226, 226, 226);
-}
-
-.intro {
-    padding: 20px 20px 0px 20px;
-}
-
-.logo {
-   height: 50px;
-   width: 50px;
-   float: left;
-}
-
-.nav-button {
-    height: 60px;
-    width: 60px;
-    float: right;
-    margin-top: -10px;
-    background: none;
-    border: none;
-    color: color(light-purple);
- }
- 
- .nav-button:focus {
-     outline: none;
- }
 
  .main-head {
-     padding-top: 7em; 
-     margin-bottom: 0px;
-     
+     padding-left: 20px;
+     padding-right: 20px;
  }
 
  .main-head .headline {
@@ -75,7 +136,7 @@ body {
      margin: 0px auto 30px auto;
  }
 
- .learn-more {
+ .learn-more { 
     background-color: color('light-blue');
     color: #ffffff;
     padding: auto 0px auto 0px;
@@ -183,7 +244,7 @@ body {
 
     .skill-name {
         word-wrap: normal;
-        font-size: 14px;
+        font-size: 12px;
         background: color(light-blue);
         color: #fff; 
         margin: 10px 0px 10px 7px;
