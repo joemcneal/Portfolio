@@ -213,10 +213,6 @@ body {
         margin-bottom: 30px;
     }
 
-    .expand-icon {
-        
-    }
-
     .progress {
         background-color: rgba(172,172,172,.24);
         border-radius:0px 5px 5px 0px;
@@ -224,6 +220,10 @@ body {
         height:20px;
         overflow:hidden;
         margin: 0px 7px 0px 7px;
+    }
+
+    p {
+        margin-bottom: 30px;
     }
         
     .bar {
@@ -266,9 +266,11 @@ body {
         font-size: 10px;
     }
 
-    .ng-hide {
-        transition: all .5s ease-in-out;
-    }
+    // .skill-list.ng-hide {
+    //     transition-property: all;
+	//     transition-duration: 2s;
+	//     transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    // }
     
 }
 

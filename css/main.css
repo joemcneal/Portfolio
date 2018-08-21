@@ -195,6 +195,10 @@ body {
   margin: 0px 7px 0px 7px;
 }
 
+.technical-skills p {
+  margin-bottom: 30px;
+}
+
 .technical-skills .bar {
   background-color: #00A2FF;
   -webkit-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15) inset;
@@ -236,11 +240,6 @@ body {
   font-weight: bold;
   padding-top: 3px;
   font-size: 10px;
-}
-
-.technical-skills .ng-hide {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
 }
 
 .experience-intro {

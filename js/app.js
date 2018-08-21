@@ -6,7 +6,7 @@ function menu_open() {
 
 
 
-var portfolioApp = angular.module('portfolioApp', []);
+var portfolioApp = angular.module('portfolioApp', ['ngAnimate']);
 
 portfolioApp.controller('SkillsController', function ($scope) {
     $scope.skillTypes = [
@@ -94,3 +94,11 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+
+
+$(document).ready(function()  {
+    $("expand").click( function() {
+        $("skill-list").slideDown();
+    })
+});
