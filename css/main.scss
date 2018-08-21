@@ -213,17 +213,21 @@ body {
         margin-bottom: 30px;
     }
 
+    .expand-icon {
+        
+    }
+
     .progress {
         background-color: rgba(172,172,172,.24);
         border-radius:0px 5px 5px 0px;
         box-shadow:0 1px 1px rgba(0,0,0,.15) inset;
-        height:40px;
+        height:20px;
         overflow:hidden;
-        margin: 10px 7px 0px 0px;
+        margin: 0px 7px 0px 7px;
     }
         
     .bar {
-        background-color: color(light-purple);
+        background-color: color(light-blue);
         box-shadow:0 -1px 1px rgba(0,0,0,.15) inset;
         color:#fff;
         float:left;
@@ -233,35 +237,37 @@ body {
     }
 
     .skill {
-        display: grid;
-        grid-template-columns: 27% auto;
         vertical-align: middle;
+        margin-top: 5px;
+        
     }
 
     .skill-area {
         margin-top: 6em;
+        transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
     }
 
     .skill-name {
         word-wrap: normal;
         font-size: 12px;
-        background: color(light-blue);
-        color: #fff; 
-        margin: 10px 0px 10px 7px;
-        height: 40px;
+        color: #585858; 
         font-weight: bold;
-        line-height: 12px;
-        border-radius:5px 0px 0px 5px;
-        padding-top: 12px;
-
+        text-align: left;
+        margin-left: 7px;
     }
 
     .skill-percent {
         float: right;
         padding-right: 3px;
         font-weight: bold;
-        padding-top: 11px;
-        font-size: 11px;
+        padding-top: 3px;
+        font-size: 10px;
+    }
+
+    .ng-hide {
+        transition: all .5s ease-in-out;
     }
     
 }

@@ -58,14 +58,16 @@
                     <div class='skill-area' ng-repeat='skillType in skillTypes'>
                         <img ng-src="images/{{skillType.id}}.svg" alt="" class="skill-image">
                         <h3>{{ skillType.name }}</h3>
-                        <div ng-repeat="skill in skills | filter: id=skillType.id">
-                            <div class='skill-list'>
-                                <div class="skill">
-                                    <div class=skill-name valign='center'> {{ skill.name }}</div>
-                                    <div class="progress">
-                                        <div class="bar" ng-style="{width:({{ skill.percent }} - 10) + '%'}"></div>
-                                        <span class="skill-percent">{{ skill.percent }}%</span>
-                                    </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ad soluta vitae ab labore obcaecati
+                            officia accusantium facere recusandae iure pariatur velit ipsa itaque voluptates quidem quibusdam,
+                            sequi maxime quos.</p>
+                        <i class="material-icons expand-icon" ng-click='show_skills=(show_skills ? false : true)' id='expand'>expand_more</i>
+                        <div ng-repeat="skill in skills | filter: id=skillType.id" ng-show="show_skills" class='skill-list' id='skill-list'>
+                            <div class="skill">
+                                <div class=skill-name valign='center'> {{ skill.name }}</div>
+                                <div class="progress">
+                                    <div class="bar" ng-style="{width:({{ skill.percent }}) + '%'}"></div>
+                                    <span class="skill-percent">{{ skill.percent }}%</span>
                                 </div>
                             </div>
                         </div>

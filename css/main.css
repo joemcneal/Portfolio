@@ -190,13 +190,13 @@ body {
   border-radius: 0px 5px 5px 0px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) inset;
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) inset;
-  height: 40px;
+  height: 20px;
   overflow: hidden;
-  margin: 10px 7px 0px 0px;
+  margin: 0px 7px 0px 7px;
 }
 
 .technical-skills .bar {
-  background-color: rgba(116, 92, 242, 0.97);
+  background-color: #00A2FF;
   -webkit-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15) inset;
           box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15) inset;
   color: #fff;
@@ -207,36 +207,40 @@ body {
 }
 
 .technical-skills .skill {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 27% auto;
-      grid-template-columns: 27% auto;
   vertical-align: middle;
+  margin-top: 5px;
 }
 
 .technical-skills .skill-area {
   margin-top: 6em;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+          transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
 
 .technical-skills .skill-name {
   word-wrap: normal;
   font-size: 12px;
-  background: #00A2FF;
-  color: #fff;
-  margin: 10px 0px 10px 7px;
-  height: 40px;
+  color: #585858;
   font-weight: bold;
-  line-height: 12px;
-  border-radius: 5px 0px 0px 5px;
-  padding-top: 12px;
+  text-align: left;
+  margin-left: 7px;
 }
 
 .technical-skills .skill-percent {
   float: right;
   padding-right: 3px;
   font-weight: bold;
-  padding-top: 11px;
-  font-size: 11px;
+  padding-top: 3px;
+  font-size: 10px;
+}
+
+.technical-skills .ng-hide {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .experience-intro {
