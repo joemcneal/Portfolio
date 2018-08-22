@@ -210,7 +210,8 @@ body {
   text-align: left;
 }
 
-.technical-skills .skill {
+.technical-skills .bar
+.skill {
   vertical-align: middle;
   margin-top: 5px;
 }
