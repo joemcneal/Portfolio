@@ -61,9 +61,9 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ad soluta vitae ab labore obcaecati
                             officia accusantium facere recusandae iure pariatur velit ipsa itaque voluptates quidem quibusdam,
                             sequi maxime quos.</p>
-                        <i class="material-icons expand-icon" ng-click='showProgress()' id='expand'>expand_more</i>
-                        <div ng-repeat="skill in skills | filter: id=skillType.id" class='skill-list' id='skill-list' ng-show='show_skills'>
-                            <div class="skill">
+                        <i class="material-icons expand-icon" ng-click='show_skills=(show_skills ? false : true)' id='expand'>expand_more</i>
+                        <div ng-repeat="skill in skills | filter: id=skillType.id" class='skill-list' id='skill-list'>
+                            <div class="skill" ng-show='show_skills'>
                                 <div class=skill-name valign='center'> {{ skill.name }}</div>
                                 <div class="progress">
                                     <div class="bar" ng-style="{width:({{ skill.percent }} - 5) + '%'}" id='bar'></div>
