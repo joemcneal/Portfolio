@@ -104,14 +104,24 @@ body {
   display: block;
   max-height: 50%;
   width: 50%;
-  margin: 0px auto 30px auto;
+  margin: 20px auto 30px auto;
   /* iPad */
+  /* Desktop */
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 415px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .avatar {
-    height: 30%;
-    width: 30%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    height: 40%;
+    width: 40%;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+  .avatar {
+    height: 350px;
+    width: 350px;
   }
 }
 
@@ -135,15 +145,31 @@ body {
 .desktop-drawing {
   margin-top: 5em;
   margin-bottom: 0;
-  /* iPad Pro Portrait */
+  /* iPad */
+  /* Desktop */
+  /* Monitor */
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 415px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .desktop-drawing {
-    -ms-flex-line-pack: center;
-        align-content: center;
-    width: 60%;
-    height: 60%;
+    height: 80%;
+    width: 80%;
+    margin-top: 10em;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1680px) and (-webkit-min-device-pixel-ratio: 1) {
+  .desktop-drawing {
+    height: 50%;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-device-width: 1681px) and (-webkit-min-device-pixel-ratio: 1) {
+  .desktop-drawing {
+    height: 40%;
+    width: 40%;
+    margin-top: 15em;
   }
 }
 
@@ -166,6 +192,23 @@ body {
 .welcome p {
   font-size: 16px;
   line-height: 33px;
+  padding-top: 20px;
+  /* iPad */
+  /* Laptop & above */
+}
+
+@media only screen and (min-device-width: 415px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .welcome p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+  .welcome p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 .technical-skills {
@@ -292,8 +335,8 @@ body {
   margin-top: -20px;
   padding-bottom: 0;
   font-style: italic;
-  -webkit-animation: label-slide .3 linear .2;
-          animation: label-slide .3 linear .2;
+  -webkit-animation: label-slide .3;
+          animation: label-slide .3;
 }
 
 @-webkit-keyframes label-slide {
@@ -337,6 +380,22 @@ body {
 .experience-intro p {
   font-size: 16px;
   line-height: 33px;
+  /* iPad */
+  /* Laptop & above */
+}
+
+@media only screen and (min-device-width: 415px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .experience-intro p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+  .experience-intro p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 .post-experience {

@@ -41,6 +41,7 @@
                     <h4 class='subheadline'>I have a passion for coding and helping others realize their full potential.</h4>
                     <img src="images/avatar.svg" alt="" class="avatar">
                     <button class='learn-more'>Learn More</button>
+                    <br>
                     <img src="images/desktop.svg" alt="" class="desktop-drawing">
                 </div>
                 <!-- Welcome paragraph -->
@@ -55,21 +56,23 @@
                 <div class="technical-skills" data-ng-controller='SkillsController'>
                     <h1>Technical Skills</h1>
                     <hr class='ts-divider'>
-                    <div class='skill-area' ng-repeat='skillType in skillTypes'>
-                        <img ng-src="images/{{skillType.id}}.svg" alt="" class="skill-image">
-                        <h3>{{ skillType.name }}</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ad soluta vitae ab labore obcaecati
-                            officia accusantium facere recusandae iure pariatur velit ipsa itaque voluptates quidem quibusdam,
-                            sequi maxime quos.</p>
-                       
-                        <i ng-click='show_skills=(show_skills ? false : true);' ng-class="rotate(show_skills)" id='expand'>expand_more</i>
-                        <p class='expand-label' ng-if='!show_skills'>Skills</p>
-                        <div ng-repeat="skill in skills | filter: id=skillType.id" class='skill-list' id='skill-list'>
-                            <div class="skill" ng-show='show_skills'>
-                                <div class=skill-name valign='center'> {{ skill.name }}</div>
-                                <div class="progress">
-                                    <div class="bar" ng-style="{width:({{ skill.percent }} - 5) + '%'}" id='bar'></div>
-                                    <span class="skill-percent">{{ skill.percent }}%</span>
+                    <div class='skill-area row container-fluid grid-wrapper' ng-repeat='skillType in skillTypes'>
+                        <div class="">
+                            <img ng-src="images/{{skillType.id}}.svg" alt="" class="skill-image">
+                            <h3>{{ skillType.name }}</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ad soluta vitae ab labore obcaecati
+                                officia accusantium facere recusandae iure pariatur velit ipsa itaque voluptates quidem quibusdam,
+                                sequi maxime quos.</p>
+
+                            <i ng-click='show_skills=(show_skills ? false : true);' ng-class="rotate(show_skills)" id='expand'>expand_more</i>
+                            <p class='expand-label' ng-if='!show_skills'>Skills</p>
+                            <div ng-repeat="skill in skills | filter: id=skillType.id" class='skill-list' id='skill-list'>
+                                <div class="skill" ng-show='show_skills'>
+                                    <div class=skill-name valign='center'> {{ skill.name }}</div>
+                                    <div class="progress">
+                                        <div class="bar" ng-style="{width:({{ skill.percent }} - 5) + '%'}" id='bar'></div>
+                                        <span class="skill-percent">{{ skill.percent }}%</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
