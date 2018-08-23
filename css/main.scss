@@ -1,7 +1,7 @@
 $colors: (
     light-blue: #00A2FF,
     light-purple: rgba(116, 92, 242,.97),
-    light-grey: rgba(126,126,126,.28),
+    light-grey: rgba(168, 168, 168, 0.28),
     money-green: #02B501,
     back-light-grey: rgb(255, 255, 255)
 );
@@ -241,7 +241,7 @@ body {
     }
 
     p {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
         
     .bar {
@@ -254,7 +254,6 @@ body {
         text-align:left;
     }
 
-    .bar
 
     .skill {
         vertical-align: middle;
@@ -289,11 +288,44 @@ body {
 
     .skill-percent {
         float: right;
-        padding-right: 3px;
+        padding-right: 5px;
         font-weight: bold;
         padding-top: 3px;
         font-size: 10px;
     }    
+
+    .expand-icon {
+        font-size: 50px;
+        color: color(money-green);
+        opacity: .7;
+        transform: rotate(0deg);
+        transition: transform .2s linear;
+    }
+
+    .expand-rotate {
+        transform: rotate(180deg);
+        transition: transform .2s linear;
+    }
+
+    .expand-label {
+        font-size: 10px;
+        margin-top: -20px;
+        padding-bottom: 0;
+        font-style: italic;
+
+        animation: label-slide .3 linear .2;
+
+        @keyframes label-slide {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+             }
+             100% {
+                opacity: 1;
+                transform: translateY(0);
+             } 
+        }
+    }
 }
 
 .experience-intro {
@@ -411,7 +443,7 @@ body {
 
 .contact-form {
     background: color(light-grey);
-    padding: 80px 20px;
+    padding: 50px 20px;
     display: grid;
     grid-template-columns: auto;
     padding-bottom: 6em;

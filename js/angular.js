@@ -40,6 +40,15 @@ portfolioApp.controller('SkillsController', function ($scope) {
         $scope.show_skills = !$scope.show_skills;
     }
 
+
+    $scope.rotate = function(show_skills) {
+        if (show_skills) {
+            return 'material-icons expand-icon expand-rotate';
+        } else {
+            return 'material-icons expand-icon';
+        }
+    }
+
 });
 
 
