@@ -14,10 +14,11 @@ $font-family: 'Montserrat', sans-serif;
 
 $max-phone: 414px;
 $min-tablet: 415px;
-$max-tablet: 1024px;
-$min-laptop: 1025px;
-$max-laptop: 1680px;
-$min-monitor: 1681px;
+$max-tablet: 1023px;
+$lg-tablet: 810px;
+$min-laptop: 1024px;
+$max-laptop: 1599px;
+$min-monitor: 1600px;
 
 
 
@@ -144,22 +145,29 @@ body {
      margin: 20px auto 30px auto;
 
      /* iPad */
-    @media only screen 
-    and (min-device-width: $min-tablet) 
-    and (max-device-width: $max-tablet) 
-    and (-webkit-min-device-pixel-ratio: 1) {
+    @media only screen and (min-device-width: $min-tablet) {
         margin-top: 5em;
         margin-bottom: 5em;
-        height: 40%;
-        width: 40%;
+        height: 30%;
+        width: 30%;
+    
         
     }
+  
     /* Desktop */
-    @media only screen 
-    and (min-device-width: $min-laptop)    
-    and (-webkit-min-device-pixel-ratio: 1) {
-        height: 350px;
-        width: 350px;
+    @media only screen and (min-device-width: $min-laptop)
+    and (min-device-width: $max-laptop) {
+        height: 250px;
+        width: 250px;
+        margin: 20px auto 30px auto;
+    }
+    
+    /* Monitor */
+    @media only screen and (min-device-width: $min-monitor) {
+        height: 250px;
+        width: 250px;
+        margin-top: 5em;
+        margin-bottom: 5em;
     }
     
  }
@@ -173,6 +181,33 @@ body {
     padding: 10px 20px; 
     border: 0px;
     border-radius: 10px;
+
+    /* iPad */
+    @media only screen 
+    and (min-device-width: $min-tablet) {
+        
+        
+    }
+
+    /* Lg Tabel */
+    @media only screen 
+    and (min-device-width: $lg-tablet) {  
+
+    }
+    
+    /* Desktop */
+    @media only screen 
+    and (min-device-width: $min-laptop) {
+
+         
+    }
+    /* Monitor */
+    @media only screen 
+    and (min-device-width: $min-monitor) {
+        height: 60px; 
+        width: 200px;
+        font-size: 20px; 
+    }
 }
 
 .right-arrow {
@@ -186,28 +221,33 @@ body {
     /* iPad */
     @media only screen 
     and (min-device-width: $min-tablet) 
-    and (max-device-width: $max-tablet) 
-    and (-webkit-min-device-pixel-ratio: 1) {
+    and (max-device-width: $max-tablet) {
         height: 80%;
         width: 80%;
         margin-top: 10em;
         
     }
+
+    /* Lg Tabel */
+    @media only screen 
+    and (min-device-width: $lg-tablet) {
+        height: 60%;
+        width: 60%;
+        
+    }
+    
     /* Desktop */
     @media only screen 
-    and (min-device-width: $min-laptop) 
-    and (max-device-width: $max-laptop)    
-    and (-webkit-min-device-pixel-ratio: 1) {
+    and (min-device-width: $min-laptop) {
         height: 50%;
         width: 50%;   
     }
     /* Monitor */
     @media only screen 
-    and (min-device-width: $min-monitor)     
-    and (-webkit-min-device-pixel-ratio: 1) {
-        height: 40%;
-        width: 40%;
-        margin-top: 15em;
+    and (min-device-width: $min-monitor) {
+        height: 30%;
+        width: 30%;
+        margin-top: 10em;
     }
 }
 
@@ -264,6 +304,15 @@ body {
     .skill-image {
         height: 40%;
         width: 40%;
+
+         /* iPad */
+        @media only screen 
+        and (min-device-width: $min-tablet) 
+        and (-webkit-min-device-pixel-ratio: 1) {
+            height: 200px;
+            width: 200px;
+            
+        }
     }
 
     h1 {
@@ -315,28 +364,46 @@ body {
     
         
     }
+    .skill-set {
+        align-content: left;
+
+         /* Laptop 2 per line */
+         @media only screen 
+         and (min-device-width: $min-tablet) 
+         and (max-device-width: $max-tablet) 
+         and (-webkit-min-device-pixel-ratio: 1) {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-left: 10%;
+            padding-right: 10%;
+         }
+         /* Laptop 2 per line */
+         @media only screen 
+         and (min-device-width: $min-laptop) 
+         and (max-device-width: $max-laptop) 
+         and (-webkit-min-device-pixel-ratio: 1) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 5em;
+         }
+         /* monitor 3 per line */
+         @media only screen 
+         and (min-device-width: $min-monitor) 
+         and (-webkit-min-device-pixel-ratio: 1) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 5em;
+         }
+
+      
+
+    }
 
     .skill-area {
         margin-top: 6em;
         transition-property: all;
         transition: .5s;
-        
-        
-
-        // .grid-wrapper {
-        //     display: grid;
-        //     grid-template-columns: repeat(3, 1fr);
-        // }
-
-
-        /* iPad  Portrait */
-        @media only screen 
-        and (min-device-width: 768px) 
-        and (max-device-width: 1366px) 
-        and (-webkit-min-device-pixel-ratio: 1) {
-            padding-left: 20%;
-            padding-right: 20%;
-        }
+        align-content: center;
     }
 
     .skill-name {

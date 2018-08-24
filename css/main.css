@@ -107,21 +107,32 @@ body {
   margin: 20px auto 30px auto;
   /* iPad */
   /* Desktop */
+  /* Monitor */
 }
 
-@media only screen and (min-device-width: 415px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 415px) {
   .avatar {
     margin-top: 5em;
     margin-bottom: 5em;
-    height: 40%;
-    width: 40%;
+    height: 30%;
+    width: 30%;
   }
 }
 
-@media only screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 1024px) and (min-device-width: 1599px) {
   .avatar {
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
+    margin: 20px auto 30px auto;
+  }
+}
+
+@media only screen and (min-device-width: 1600px) {
+  .avatar {
+    height: 250px;
+    width: 250px;
+    margin-top: 5em;
+    margin-bottom: 5em;
   }
 }
 
@@ -134,6 +145,18 @@ body {
   padding: 10px 20px;
   border: 0px;
   border-radius: 10px;
+  /* iPad */
+  /* Lg Tabel */
+  /* Desktop */
+  /* Monitor */
+}
+
+@media only screen and (min-device-width: 1600px) {
+  .learn-more {
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+  }
 }
 
 .right-arrow {
@@ -146,11 +169,12 @@ body {
   margin-top: 5em;
   margin-bottom: 0;
   /* iPad */
+  /* Lg Tabel */
   /* Desktop */
   /* Monitor */
 }
 
-@media only screen and (min-device-width: 415px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 415px) and (max-device-width: 1023px) {
   .desktop-drawing {
     height: 80%;
     width: 80%;
@@ -158,18 +182,25 @@ body {
   }
 }
 
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1680px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 810px) {
+  .desktop-drawing {
+    height: 60%;
+    width: 60%;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
   .desktop-drawing {
     height: 50%;
     width: 50%;
   }
 }
 
-@media only screen and (min-device-width: 1681px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 1600px) {
   .desktop-drawing {
-    height: 40%;
-    width: 40%;
-    margin-top: 15em;
+    height: 30%;
+    width: 30%;
+    margin-top: 10em;
   }
 }
 
@@ -197,14 +228,14 @@ body {
   /* Laptop & above */
 }
 
-@media only screen and (min-device-width: 415px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 415px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
   .welcome p {
     padding-left: 5%;
     padding-right: 5%;
   }
 }
 
-@media only screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .welcome p {
     padding-left: 10%;
     padding-right: 10%;
@@ -226,6 +257,14 @@ body {
 .technical-skills .skill-image {
   height: 40%;
   width: 40%;
+  /* iPad */
+}
+
+@media only screen and (min-device-width: 415px) and (-webkit-min-device-pixel-ratio: 1) {
+  .technical-skills .skill-image {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 .technical-skills h1 {
@@ -276,20 +315,53 @@ body {
   margin-top: 5px;
 }
 
+.technical-skills .skill-set {
+  -ms-flex-line-pack: left;
+      align-content: left;
+  /* Laptop 2 per line */
+  /* Laptop 2 per line */
+  /* monitor 3 per line */
+}
+
+@media only screen and (min-device-width: 415px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+  .technical-skills .skill-set {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1599px) and (-webkit-min-device-pixel-ratio: 1) {
+  .technical-skills .skill-set {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5em;
+  }
+}
+
+@media only screen and (min-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .technical-skills .skill-set {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5em;
+  }
+}
+
 .technical-skills .skill-area {
   margin-top: 6em;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition: .5s;
   transition: .5s;
-  /* iPad  Portrait */
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
-  .technical-skills .skill-area {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .technical-skills .skill-name {
@@ -384,14 +456,14 @@ body {
   /* Laptop & above */
 }
 
-@media only screen and (min-device-width: 415px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 415px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
   .experience-intro p {
     padding-left: 5%;
     padding-right: 5%;
   }
 }
 
-@media only screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .experience-intro p {
     padding-left: 10%;
     padding-right: 10%;
