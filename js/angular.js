@@ -65,6 +65,18 @@ portfolioApp.controller('ExperienceController', function ($scope) {
             name: 'Synovus Financial Corp',
             role: "Business Analyst",
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia corrupti quo, voluptates sed odit consequuntur totam sunt magni! Provident quaerat eum omnis! Aliquam saepe pariatur nam voluptates. Distinctio inventore praesentium officia neque a obcaecati sint iusto blanditiis sequi minima, amet sunt libero ex porro excepturi odio minus saepe dolore?'
+        },
+        {
+            id: 'synovus',
+            name: 'Synovus Financial Corp',
+            role: "Business Analyst",
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia corrupti quo, voluptates sed odit consequuntur totam sunt magni! Provident quaerat eum omnis! Aliquam saepe pariatur nam voluptates. Distinctio inventore praesentium officia neque a obcaecati sint iusto blanditiis sequi minima, amet sunt libero ex porro excepturi odio minus saepe dolore?'
+        },
+        {
+            id: 'synovus',
+            name: 'Synovus Financial Corp',
+            role: "Business Analyst",
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia corrupti quo, voluptates sed odit consequuntur totam sunt magni! Provident quaerat eum omnis! Aliquam saepe pariatur nam voluptates. Distinctio inventore praesentium officia neque a obcaecati sint iusto blanditiis sequi minima, amet sunt libero ex porro excepturi odio minus saepe dolore?'
         }
     ];
 });

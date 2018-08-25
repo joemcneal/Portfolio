@@ -21,6 +21,14 @@
                 <a href="index.html">
                     <img class='logo' src='images/logo.svg'>
                 </a>
+
+                <div class='desktop-nav'>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+
                 <a href="javascript:void(0)" onclick="openNav()">
                     <img src="images/side-bar-menu.svg" alt="" class="nav-button">
                 </a>
@@ -90,12 +98,14 @@
                 <div class="professional-experience" data-ng-controller='ExperienceController'>
                     <h1>Work Experience</h1>
                     <hr class='ts-divider'>
-                    <div class='experience-instance' ng-repeat='experience in experiences'>
-                        <img src="images/{{experience.id}}-logo.svg" alt="" class="experience-logo">
-                        <p id='name'>{{experience.name}}</p>
-                        <p id='role'>{{experience.role}}</p>
-                        <p id='description'>{{experience.description}}</p>
-                        <button class="see-more-details btn">See More Details</button>
+                    <div class="experience-list">
+                        <div class='experience-instance' ng-repeat='experience in experiences'>
+                            <img src="images/{{experience.id}}-logo.svg" alt="" class="experience-logo">
+                            <p id='name'>{{experience.name}}</p>
+                            <p id='role'>{{experience.role}}</p>
+                            <p id='description'>{{experience.description}}</p>
+                            <button class="see-more-details btn">See More Details</button>
+                        </div>
                     </div>
                 </div>
                 <!-- Used to move everything pas the experience up -->
@@ -104,9 +114,13 @@
                     <div class="contact-form">
                         <h1 class='cta-headline'>Interested in working together?</h1>
                         <h4>I am available for freelance development work. Enter your email and details of your inquiry below.</h4>
-                        <input type="text" class="user-info" placeholder='Name' maxlength="50">
-                        <input type="text" class="user-info" placeholder='Email Address' maxlength="50">
-                        <textarea type="text" rows='5' placeholder='Enter your message here...' maxlength="2000"></textarea>
+                        <div class="input-fields">
+                            <div class="user-fields">
+                                <input type="text" class="user-info" placeholder='Name' maxlength="50">
+                                <input type="text" class="user-info" placeholder='Email Address' maxlength="50">
+                            </div>
+                            <textarea id='message' type="text" rows='5' placeholder='Enter your message here...' maxlength="2000"></textarea>
+                        </div>
                         <button class="submit btn">Submit</button>
                     </div>
                     <footer>

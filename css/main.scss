@@ -39,6 +39,12 @@ body {
     .top-nav {
         padding: 10px 20px;
         background: #fff;
+        /* Desktop */
+        @media only screen 
+        and (min-device-width: $min-laptop) {
+            padding: 10px 10%;
+            
+        }
        
 
         .sticky {
@@ -55,6 +61,37 @@ body {
             background: none;
             border: none;
             color: color(light-purple);
+
+            /* Desktop */
+            @media only screen 
+            and (min-device-width: $min-laptop) {
+                display: none;       
+            }
+        }
+
+        .desktop-nav {
+            display: none;
+            width: 40%;
+            float: right;
+            padding-top: 15px;
+            
+
+            /* Desktop */
+            @media only screen 
+            and (min-device-width: $min-laptop) {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);  
+                color: color(light-purple);    
+            }
+
+            a {
+                color: color(light-purple);
+                text-decoration: none;
+            }
+            
+            a:hover {
+                color: rgb(134, 134, 134)
+            }
         }
         
         .nav-button:focus {
@@ -140,23 +177,13 @@ body {
 
  .avatar {
      display: block;
-     max-height: 50%;
-     width: 50%;
+     height: 200px;
+     width: 200px;
      margin: 20px auto 30px auto;
 
-     /* iPad */
-    @media only screen and (min-device-width: $min-tablet) {
-        margin-top: 5em;
-        margin-bottom: 5em;
-        height: 30%;
-        width: 30%;
-    
-        
-    }
   
     /* Desktop */
-    @media only screen and (min-device-width: $min-laptop)
-    and (min-device-width: $max-laptop) {
+    @media only screen and (min-device-width: $min-laptop) {
         height: 250px;
         width: 250px;
         margin: 20px auto 30px auto;
@@ -166,8 +193,6 @@ body {
     @media only screen and (min-device-width: $min-monitor) {
         height: 250px;
         width: 250px;
-        margin-top: 5em;
-        margin-bottom: 5em;
     }
     
  }
@@ -198,15 +223,15 @@ body {
     /* Desktop */
     @media only screen 
     and (min-device-width: $min-laptop) {
-
+        height: 60px; 
+        width: 200px;
+        font-size: 20px;
          
     }
     /* Monitor */
     @media only screen 
     and (min-device-width: $min-monitor) {
-        height: 60px; 
-        width: 200px;
-        font-size: 20px; 
+        
     }
 }
 
@@ -231,24 +256,25 @@ body {
     /* Lg Tabel */
     @media only screen 
     and (min-device-width: $lg-tablet) {
-        height: 60%;
-        width: 60%;
+        height: 70%;
+        width: 70%;
         
     }
     
     /* Desktop */
     @media only screen 
     and (min-device-width: $min-laptop) {
-        height: 50%;
-        width: 50%;   
+        height: 200px;
+        width: 587px; 
+        margin-top: 12.5em;
     }
-    /* Monitor */
-    @media only screen 
-    and (min-device-width: $min-monitor) {
-        height: 30%;
-        width: 30%;
-        margin-top: 10em;
-    }
+    // /* Monitor */
+    // @media only screen 
+    // and (min-device-width: $min-monitor) {
+    //     height: 55%;
+    //     width: 55%;
+        
+    // }
 }
 
 #welcome-div {
@@ -298,6 +324,18 @@ body {
     border-radius: 20px;
     margin-bottom: -220px;
     padding-bottom: 6em;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+
+    @media (min-device-width: $min-tablet) {
+        padding-left: 10%;
+        padding-right: 10%;         
+    }
+    @media (min-device-width: $min-laptop) {
+        padding-left: 100px;
+        padding-right: 100px;         
+    }
 
 
 
@@ -323,7 +361,6 @@ body {
     
     hr {
         border-bottom: 2px solid color(light-grey);
-        width: 80%;
         margin-top: 0px;
     }
 
@@ -374,8 +411,7 @@ body {
          and (-webkit-min-device-pixel-ratio: 1) {
             display: grid;
             grid-template-columns: 1fr;
-            padding-left: 10%;
-            padding-right: 10%;
+           
          }
          /* Laptop 2 per line */
          @media only screen 
@@ -385,6 +421,7 @@ body {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 5em;
+            
          }
          /* monitor 3 per line */
          @media only screen 
@@ -484,8 +521,8 @@ body {
         @media only screen 
         and (min-device-width: $min-laptop)  
         and (-webkit-min-device-pixel-ratio: 1) {
-            padding-left: 10%;       
-            padding-right: 10%;       
+           padding-left: 10%;
+            padding-right: 10%;      
         }
     }
 }
@@ -506,6 +543,20 @@ body {
     padding-top: 30px;
     border-radius: 20px;
     margin-bottom: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+
+    @media (min-device-width: $min-tablet) {
+        padding-left: 10%;
+        padding-right: 10%;         
+    }
+    @media (min-device-width: $min-laptop) {
+        padding-left: 100px;
+        padding-right: 100px;         
+    }
+
+   
 
     h1 {
         font-size: 28px;
@@ -515,93 +566,110 @@ body {
     
     hr {
         border-bottom: 2px solid color(light-grey);
-        width: 80%;
         margin-top: 0px;
     }
 
-    .experience-instance {
-        margin-top: 2em;
-        margin-bottom: 5em;
-        padding: 0px 0px 10px 0px;
-    }
+    .experience-list {
+        /* Laptop 2 per line */
+        @media only screen 
+        and (min-device-width: $min-laptop) 
+        {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(250px, 1fr) );
+            grid-column-gap: 5em;
+        }
+        padding-bottom: 50px;
+        padding-top: 50px;
+    
 
-    .experience-logo {
-        max-height: 60%;
-        max-width: 60%;
-        margin-bottom: 3em;
+        .experience-instance {
+            margin-top: 2em;
+            margin-bottom: 2em;
+            padding: 0px 0px 10px 0px;
+
+
+            .experience-logo {
+                height: 40%;
+                width: 40%;
+
+                /* iPad */
+                @media only screen 
+                and (min-device-width: $min-tablet) {
+                    height: 200px;
+                    width: 200px;
+            
+                } 
+            }
         
-        /* iPad */
-        @media only screen 
-        and (min-device-width: 768px) 
-        and (max-device-width: 1366px) 
-        and (-webkit-min-device-pixel-ratio: 1) {
-            height: 30%;
-            width: 30%;
+            .experience-background {
+                max-height: 100%;
+                max-width: 100%;
+            }
+            
+            p {
+                margin-bottom: 10px;
+                color: #5e5e5e;
+            }
+        
+            #name {
+                font-weight: bold;
+                font-size: 20px;
+            }
+        
+            #role {
+                font-style: italic;
+            }
+        
+            #description {
+                margin-top: 40px;
+                margin-bottom: 20px;
+        
+            }
+        
+            .see-more-details {
+                margin-top: 10px;
+                font-weight: bold;
+                background-color: color(light-purple);
+                color: #fff;
+            }
         }
-
     }
-
-    .experience-background {
-        max-height: 100%;
-        max-width: 100%;
-     }
-     
-     p {
-        //  font-size: 18px;
-         //text-align: left;
-         margin: 0% 3%;
-         margin-bottom: 10px;
-         color: #5e5e5e;
-
-         /* iPad  Portrait */
-        @media only screen 
-        and (min-device-width: 768px) 
-        and (max-device-width: 1366px) 
-        and (-webkit-min-device-pixel-ratio: 1) {
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-     }
-
-     #name {
-        font-weight: bold;
-        font-size: 20px;
-     }
-
-     #role {
-        font-style: italic;
-     }
-
-     #description {
-         margin-top: 40px;
-         margin-bottom: 20px;
-
-     }
-
-     .see-more-details {
-         margin-top: 10px;
-         font-weight: bold;
-         background-color: color(light-purple);
-         color: #fff;
-     }
+    
 }
 
 .contact-form {
     background: color(light-grey);
-    padding: 50px 20px;
-    display: grid;
-    grid-template-columns: auto;
-    padding-bottom: 6em;
+    padding: 70px 20px 70px 20px;   
     margin-top: 0px;
+
+    @media (min-device-width: $min-tablet) {
+        padding-left: 15%;
+        padding-right: 15%;         
+    }
+    @media (min-device-width: $min-laptop) {
+        padding-left: 25%;
+        padding-right: 25%;  
+        padding-bottom: 10%;       
+    }
+    
+    .input-fields {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 2em;
+
+        .user-fields {
+            display: grid;
+            grid-template-columns: 1fr;
+
+             @media (min-device-width: $min-laptop) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 15px;   
+             }
+        }
+    }
    
-    /* iPad  Portrait */
-   @media only screen 
-   and (min-device-width: 768px) 
-   and (max-device-width: 1366px) 
-   and (-webkit-min-device-pixel-ratio: 1) {
-       padding-left: 10%;
-       padding-right: 10%;
-   }
+
 
     h1 {
         font-size: 38px;
@@ -620,6 +688,8 @@ body {
         border: color(light-grey);
         padding: 10px 10px;
         border-radius: 5px;
+        @media (min-device-width: $min-laptop) {
+        }
     }
 
     input:focus, textarea:focus {
@@ -636,13 +706,19 @@ body {
         border-radius: 5px;
     }
 
-    button {
-        margin-top: 50px;
+    button {   
         color: white;
         background: color(money-green);
         font-size: 24px;
         font-weight: 600;
-        padding: 10px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+
+        @media (min-device-width: $min-laptop) {
+            width: 40%;   
+            float: right;
+         }
     }
 }
 
